@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:monospace;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(3, 28, 168);
+    padding: 20px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 7657;
+    border-radius: 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 16%;
+}
+
+.section1 .text h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.section1 .text h1 span{
+    color: rgb(3, 28, 168);
+}
+
+.section1 .text{
+    text-align: right;
+}
+
+.section1 .text a{
+    display: block;
+    width: fit-content;
+    padding: 5px 50px;
+    background-color: rgb(3, 28, 168);
+    color: wheat;
+    border-radius: 30px 40px;
+    margin: auto;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.section1 img{
+    width: 450px;
+    height: 600px;
+}
+/* end Home */
+
+/* start skills */
+.section2{
+    margin-top: 220px;
+}
+
+.section2 h1{
+    text-align: center;
+    position: relative;
+    background-color: rgb(21, 32, 255);
+    color: wheat;
+    width: 20%;
+    margin: auto;
+    border-radius: 50px 20px;
+    padding: 10px;
+}
+
+.section2 .skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.section2 .skills .skill p{
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(74, 59, 246);
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 20px 5px 21px 18px;
+}
+/* end skills */
+
+
+
+/* <!--==========Start Contact ===========--> */
+.contact{
+    padding: 8rem 0 1rem;
+}
+
+.container-contact{
+    max-width: 1140px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem
+}
+
+.contact-date .contact-header{
+    margin-bottom: 70px
+}
+
+.contact-header h1{
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: 500
+}
+
+.contact-body{
+    margin-bottom: 30px
+}
+
+.p1{
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 2px
+}
+
+ .p2{
+    color: var(--title-color);
+    font-size: 18px;
+}
+
+.p2 i{
+    color: rgb(27, 194, 27);
+    font-size: 23px;
+    
+    margin-right: 10px;
+
+    position: relative;
+    top: 5px
+}
+
+.contact-footer .p2 i{
+    color: rgb(212, 160, 17)
+}
+
+/* form ===*/
+.input{
+    border-bottom: 2px solid rgb(180, 64, 64);
+
+    margin-bottom: 30px;
+    height: 3rem; 
+
+    position: relative;
+
+}
+
+.input input {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+ 
+
+    background:none;
+    border: none;
+
+    outline: none;
+}
+
+.input textarea {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:none;
+    border: none;
+
+    outline: none;
+    resize: none
+}
+
+
+label{
+    position: absolute;
+    top: 10px;
+
+
+    color: var(--text-color);
+    font-size: 15px;
+
+
+    transition: 0.2s;
+}
+
+.ar{
+    height: 7rem;
+}
+
+
+.input span{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
+    content: "";
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--main-color);
+
+    transition: 0.5s;
+}
+
+.input input:focus ~ span{
+    width: 100%
+}
+
+.input textarea:focus ~ span{
+    width: 100%
+}
+
+.input input:focus ~ label{
+    color: var(--main-color);
+
+    transform: translateY(-20px);
+}
+
+
+.input textarea:focus ~ label{
+    color: var(--main-color);
+
+    transform: translateY(-20px);
+}
+
+.contact-date{
+    text-align: center;
+}
+
+.button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* <!--==========End Contact ===========--> */
+
+
+
+
